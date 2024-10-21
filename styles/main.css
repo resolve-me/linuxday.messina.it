@@ -1,0 +1,219 @@
+/* Imports ********************************************************************/
+
+@import "reset.css";
+@import "../fonts/Intro/main.css";
+@import "../fonts/Clear-Sans/main.css";
+
+
+/* Colors *********************************************************************/
+
+:root {
+    --white: #f0f0f0;
+    --black: #191919;
+    --accent-1: #0da08e;
+    --accent-2: #0063a9;
+}
+
+
+/* Typograhy ******************************************************************/
+
+h1, h2, p, a {
+    color: var(--black);
+}
+
+p, li {
+    font-family: "Clear Sans", sans-serif;
+    font-size: 14pt;
+}
+
+h1, h2 {
+    font-family: "Intro", sans-serif;
+}
+
+h1 {
+    font-size: 32pt;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 24pt;
+    text-transform: uppercase;
+}
+
+
+/* Icons **********************************************************************/
+
+div.icon-group {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+div.icon-group img.icon {
+    width: 30px;
+}
+
+div.icon-group p.label {
+    font-weight: bold;
+}
+
+
+/* Common Layout **************************************************************/
+
+body {
+    background-color: var(--white);
+}
+
+.container {
+    max-width: 1000px;
+    padding: 25px;
+    margin: 0 auto 0 auto;
+}
+
+
+/* Header *********************************************************************/
+
+header {
+    background-color: var(--accent-1);
+}
+
+header div#header-container {
+    display: flex;
+    background-color: var(--accent-1);
+    flex-wrap: wrap;
+    column-gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img#header-logo,
+header div#header-content
+{
+    margin: 0 auto 0 auto;
+}
+
+header div#header-container img#header-logo {
+    display: block;
+    max-width: 300px;
+}
+
+header div#header-content h1 {
+    line-height: 1;
+    color: var(--white);
+    text-align: center;
+}
+
+header div#header-content h1 span#header-title-top {
+    display: block;
+    font-size: min(72pt, 14.5vw);
+}
+
+header div#header-content h1 span#header-title-bottom {
+    display: block;
+    font-size: min(54pt, 10.7vw);
+}
+
+header div#header-content p#header-subtitle {
+    display: block;
+    max-width: 500px;
+    font-size: max(20pt, 2.2vw);
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Quick information **********************************************************/
+
+section#quick-info {
+    background-color: var(--accent-2);
+}
+
+section#quick-info div#quick-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 30px;
+}
+
+section#quick-info div.quick-info-entry {
+    flex-grow: 1;
+}
+
+section#quick-info p.label {
+    color: var(--white);
+    font-size: 16pt;
+}
+
+section#quick-info p.label a {
+    color: var(--white);
+}
+
+
+/* Schedule *******************************************************************/
+
+section#schedule div#schedule-content {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+section#schedule article.schedule-entry {
+    margin: 0 0 20px 0;
+}
+
+section#schedule section#schedule-talks {
+    flex-grow: 3;
+    flex-basis: 0
+}
+
+section#schedule article.schedule-entry p.schedule-time {
+    color: var(--accent-2);
+    font-weight: bold;
+}
+
+section#schedule article.schedule-entry p.schedule-room {
+    display: inline;
+    font-weight: bold;
+    float: right;
+}
+
+section#schedule article.schedule-entry p.schedule-title {
+    font-weight: bold;
+}
+
+section#schedule article.schedule-entry p.schedule-author {}
+
+section#schedule article.schedule-entry span.schedule-author-name {
+    font-style: italic;
+}
+
+section#schedule section#schedule-workshops {
+    flex-grow: 2;
+    flex-basis: 0;
+}
+
+
+/* More information ***********************************************************/
+
+section#more-info {
+    background-color: var(--accent-2);
+}
+
+section#more-info h1,
+section#more-info li,
+section#more-info a
+{
+    color: var(--white);
+}
+
+section#more-info ul {
+    padding: 0 0 0 20px;
+}
+
+section#more-info li a {
+    font-weight: bold;
+}

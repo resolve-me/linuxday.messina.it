@@ -1,0 +1,24 @@
+/*
+ * Taken from:
+ * https://github.com/resir014/Clear-Sans-Webfont
+ */
+
+@font-face {
+    font-family: "Clear Sans";
+    font-style: normal;
+    font-weight: 400;
+    src:
+       url("ClearSans-Regular.woff2") format("woff2"),
+       url("ClearSans-Regular.woff") format("woff")
+    ;
+}
+
+@font-face {
+    font-family: "Clear Sans";
+    font-style: normal;
+    font-weight: 700;
+    src:
+         url("ClearSans-Bold.woff2") format("woff2"),
+         url("ClearSans-Bold.woff") format("woff")
+    ;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Linux Day Messina 2024",
+  "short_name": "Linux Day",
+  "description": "Giornata nazionale del software libero e delle libertà digitali",
+  "start_url": "https://linuxday.messina.it",
+  "icons": [
+    {
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffffff",
+  "background_color": "#0da08e",
+  "display": "standalone"
+}
